@@ -11,8 +11,6 @@ class NugetPublishAction < Formula
   def install
     system "dotnet", "tool", "install", "NugetPublishAction", "--add-source", "#{Dir.pwd}", "--tool-path", "#{libexec}/bin"
     bin.install_symlink Dir["#{libexec}/bin/*"]
-    # lib.install "dotnet_requirement.rb"
-    # system "cp", "dotnet_requirement.rb", "#{Dir.pwd}"
   end
   
 end
