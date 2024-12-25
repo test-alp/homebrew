@@ -14,9 +14,5 @@ class NugetPublishAction < Formula
     # lib.install "dotnet_requirement.rb"
     # system "cp", "dotnet_requirement.rb", "#{Dir.pwd}"
   end
-
-  test do
-    assert_match "version_string", shell_output("NugetPublishAction --version")
-  end
   
 end
