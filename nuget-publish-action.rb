@@ -1,4 +1,4 @@
-require_relative "dotnet_requirement"
+require_relative "dotnet-requirement"
 
 class NugetPublishAction < Formula
   desc "dotnet tool homebrew poc"
